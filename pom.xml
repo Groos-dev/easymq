@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.xin.easymq</groupId>
+  <artifactId>esay-mq-all</artifactId>
+  <version>${esay-mq.version}</version>
+  <packaging>pom</packaging>
+
+  <name>esay-mq ${project.version</name>
+  <url>http://maven.apache.org</url>
+  <modules>
+    <module>easymq-client</module>
+    <module>easymq-broker</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <esay-mq.version>1.0-SNAPSHOT</esay-mq.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
