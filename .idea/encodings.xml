@@ -5,6 +5,12 @@
     <file url="file://$PROJECT_DIR$/easymq-broker/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/easymq-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/easymq-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easymq-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easymq-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easymq-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easymq-log/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easymq-nameserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easymq-nameserver/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

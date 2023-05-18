@@ -12,6 +12,9 @@
   <modules>
     <module>easymq-client</module>
     <module>easymq-broker</module>
+    <module>easymq-common</module>
+    <module>easymq-log</module>
+      <module>easymq-nameserver</module>
   </modules>
 
   <properties>
