@@ -11,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/easymq-log/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/easymq-nameserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/easymq-nameserver/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easymq-network/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/easymq-network/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

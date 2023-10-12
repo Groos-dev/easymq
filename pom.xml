@@ -1,33 +1,84 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.xin.easymq</groupId>
-  <artifactId>esay-mq-all</artifactId>
-  <version>${esay-mq.version}</version>
-  <packaging>pom</packaging>
+    <groupId>org.xin.easymq</groupId>
+    <artifactId>esay-mq-all</artifactId>
+    <version>${esay-mq.version}</version>
+    <packaging>pom</packaging>
 
-  <name>esay-mq ${project.version</name>
-  <url>http://maven.apache.org</url>
-  <modules>
-    <module>easymq-client</module>
-    <module>easymq-broker</module>
-    <module>easymq-common</module>
-    <module>easymq-log</module>
-      <module>easymq-nameserver</module>
-  </modules>
+    <name>esay-mq ${project.version</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>easymq-client</module>
+        <module>easymq-broker</module>
+        <module>easymq-common</module>
+        <module>easymq-log</module>
+        <module>easymq-nameserver</module>
+        <module>easymq-network</module>
+    </modules>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <esay-mq.version>1.0-SNAPSHOT</esay-mq.version>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <esay-mq.version>1.0-SNAPSHOT</esay-mq.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.0.42.Final</version>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.xin.easymq</groupId>
+                <artifactId>easymq-broker</artifactId>
+                <version>${esay-mq.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.xin.easymq</groupId>
+                <artifactId>easymq-client</artifactId>
+                <version>${esay-mq.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.xin.easymq</groupId>
+                <artifactId>easymq-common</artifactId>
+                <version>${esay-mq.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.xin.easymq</groupId>
+                <artifactId>easymq-log</artifactId>
+                <version>${esay-mq.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.xin.easymq</groupId>
+                <artifactId>easymq-network</artifactId>
+                <version>${esay-mq.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
 </project>
